@@ -6,7 +6,7 @@ class MembersController < ApplicationController
     else
       flash[:error] = member.errors.full_messages.join(" - ")
     end
-    redirect_to feelings_path
+    redirect_to root_path
   end
 
   private
